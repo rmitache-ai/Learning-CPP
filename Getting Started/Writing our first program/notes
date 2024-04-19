@@ -1,0 +1,63 @@
+						What are compiler errors?
+						_________________________
+
+Errors in the code that hinder the compiler from converting the program into
+machine language are known as compiler errors. These problems usually involve
+improper variable names or types, together with syntax issues such missing
+semicolons, parentheses, or quote marks. When an error occurs, the compiler
+stops compiling and displays an error message that describes the problem's
+location and kind. Since the compiler's understanding of the code depends on
+proper syntax and structure, fixing one compiler fault frequently fixes
+subsequent errors. Most of the time, reading what the compiler complains
+about will lead you to a solution.
+
+
+						What are compiler warnings?
+						_________________________
+
+Warnings should not be ignored. The compiler has recognized a possible issue
+with your code and should be taken care of. It's only an error, since the compiler
+can still generate machine code.
+
+int miles_driven;
+std::cout << miles_driven << std::endl;
+
+					warning: 'miles_driven' is unintialized
+
+
+						What are linker errors?
+						_________________________
+
+During the linking stage of the compilation process, linker faults happens.
+Following compilation, when the compiler created object files from source code,
+comes this stage. Combining these object files and resolving references to
+variables and functions defined in various files or libraries is the
+responsibility of the linker. When the linker is unable to locate the
+implementation of a function or variable that is defined in another file but
+referenced in another, linker errors usually result. This may occur when an
+object file or library that is needed is missing, or when the same function
+or variable is defined inconsistently in several places.
+Most of the times the problem is in the headers not hinding their paths.
+
+
+						What are run-time errors?
+						_________________________
+
+These happen when a program is running and runs into a problem that stops it
+from proceeding as intended. This can involve running out of memory, reading
+from or writing to an invalid file, dividing by zero, and trying to access
+memory that has not been allocated. Program crashes and unexpected behavior
+are frequently the result of run-time defects.
+
+
+						What are logic errors?
+						_________________________
+
+These happen when there are errors in the code's reasoning or logical structure.
+Logic faults cause the program to operate incorrectly rather than stopping it
+from building or running, unlike syntax mistakes, which are detected by the
+compiler. Examples include supplying wrong parameters to a function,
+misinterpreting the requirements of an issue, or utilizing the incorrect
+condition in an if statement (e.g., using "\" instead of ">").
+It might be difficult to debug logic mistakes and frequently calls
+for closely examining the behavior and flow of the code using debugging methods.
