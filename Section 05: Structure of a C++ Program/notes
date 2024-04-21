@@ -1,2 +1,21 @@
 						What is a Preprocessor Directive?
 						_________________________________
+
+Preprocessor Directive also known as include, are what is run first before
+the compiler sees it. They remove the '#' and replaces them with spaces.
+It will process directives based on the rules, first run to know if you are on
+linux, or mac, to run other stuff and check libraries
+(#include <iostream> -> "/usr/include/c++/4.5/iostream").
+It will change to it's path. This is a simplified explanation.
+Some directive are: #define, #if, #ifdef, #ifndef, #else, #elif, #endif, #pragma
+Also, all comments are removed.
+
+							What are Namespaces
+							___________________
+
+'std::cout' can be called 'cout', by using namespaces std. This is not
+recommended because if we work with external libraries/frameworks, the author
+of that might have also have a object defined called 'cout' and that would result
+in a naming conflict. For clarity and to avoid potential conflicts,
+it's recommended to fully qualify the namespace of the entities you're using,
+like 'std::cout', instead of using the 'using namespace' directive.
